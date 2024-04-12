@@ -1,0 +1,414 @@
+/* Styles généraux */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf2ff; /* Bleu clair */
+    color: #333; /* Couleur du texte */
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+.container {
+    width: 100vw; /* Prend toute la largeur de la fenêtre */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    padding: 20px;
+}
+
+/* Styles spécifiques pour l'en-tête */
+
+header {
+    background-color: #1a4876; /* Bleu foncé */
+    padding: 0.01px 30px; /* Réduire l'épaisseur du padding */
+    text-align: center;
+    color: white; /* Couleur du texte de l'en-tête */
+    position: fixed; /* Position fixe */
+    top: 0; /* Fixer l'entête en haut de la page */
+    width: 100%; /* Prendre toute la largeur de la fenêtre */
+    z-index: 1000; /* Assurer que l'entête reste au-dessus du contenu */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Aligner le contenu à l'extrémité des deux côtés */
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centrer verticalement */
+}
+
+.header-content h1 {
+    font-family: 'Arial Black', sans-serif; /* Police en gras */
+    font-size: 24px; /* Réduire la taille du texte pour mieux s'adapter à l'en-tête */
+    margin-right: 20px; /* Ajouter de l'espace entre le nom et le reste du contenu */
+}
+
+header nav ul {
+    margin-left: 100px; /* Ajustez la valeur selon vos préférences */
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilisation de flexbox */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Supprimer la marge de droite du dernier élément pour éviter un espace supplémentaire */
+}
+
+nav ul li a {
+    color: white; /* Couleur des liens dans la barre de navigation */
+    text-decoration: none;
+    font-size: 16px; /* Réduire la taille du texte pour mieux s'adapter à l'en-tête */
+}
+
+nav ul li a:hover {
+    color: #f5deb3; /* Couleur du texte au survol des liens */
+}
+
+/* Styles spécifiques pour les sections */
+
+section {
+    padding: 20px;
+    background-color: #eaf2ff; /* Bleu clair */
+    margin-top: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-family: 'Arial Black', sans-serif; /* Police en gras */
+}
+
+section p {
+    line-height: 1.5;
+}
+
+/* Styles spécifiques pour le formulaire de contact */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1a4876; /* Bleu foncé */
+    color: white; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6c8db7; /* Bleu clair au survol */
+}
+
+/* Styles spécifiques pour la section "À propos de moi" */
+
+.about-content {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+}
+
+.about-img {
+    flex: 1; /* Prend autant d'espace que possible */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.about-text {
+    flex: 2; /* Prend autant d'espace que possible */
+}
+
+.profile-image {
+    width: 400px; /* Ajustez la largeur selon vos préférences */
+    height: auto; /* Permet de conserver les proportions de l'image */
+}
+
+/* Styles spécifiques pour les sections avec fond d'image */
+
+/* Styles spécifiques pour les sections avec fond d'image */
+
+.with-background {
+    background-image: url('./img/bleu.png'); /* Chemin vers votre image */
+    background-size: cover; /* Redimensionne l'image pour remplir toute la zone */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    color: #000000; /* Couleur du texte pour une meilleure lisibilité */
+    padding: 20px;
+}
+
+/* Assurez-vous que le texte est lisible sur l'image en ajustant la couleur du texte si nécessaire */
+
+.contact-content {
+    /* Styles spécifiques pour la section "Contact" si nécessaire */
+}
+
+
+.about-content {
+    background-image: url('./img/bleu.png'); /* Chemin vers votre image */
+    background-size: cover; /* Redimensionne l'image pour remplir toute la zone */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    color: #000000; /* Couleur du texte pour une meilleure lisibilité */
+    padding: 20px;
+}
+
+.about-content p {
+    background-color: #b3d9f7; /* Bleu clair */
+    border-radius: 10px; /* Bordure arrondie */
+    padding: 10px 15px; /* Espace intérieur */
+    margin: 10px 0; /* Marge autour du paragraphe */
+    font-size: 'Roboto', sans-serif;
+}
+
+/* Styles spécifiques pour le formulaire de contact */
+
+#contact {
+    text-align: center; /* Centrer le contenu du formulaire */
+}
+
+#contact form {
+    display: inline-block; /* Pour centrer le formulaire */
+    background-color: #b3d9f7; /* Bleu clair */
+    border-radius: 10px; /* Bordure arrondie */
+    padding: 30px; /* Espace intérieur augmenté */
+    margin-top: 20px; /* Espace en haut du formulaire */
+    max-width: 600px; /* Largeur maximale du formulaire */
+    width: 80%; /* Largeur du formulaire ajustée */
+    text-align: left; /* Rétablir l'alignement à gauche pour les éléments du formulaire */
+}
+
+
+/* Styles spécifiques pour la section "Projets" */
+
+#projets {
+    padding: 20px;
+    background-color: #eaf2ff; /* Bleu clair */
+}
+
+.project {
+    display: flex; /* Utilisation de flexbox */
+    margin-bottom: 20px; /* Espace entre chaque projet */
+}
+
+.project-image {
+    flex: 1; /* Prend autant d'espace que possible */
+    margin-right: 20px; /* Espace entre l'image et les détails */
+}
+
+.project-image img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de son conteneur */
+    height: auto; /* Permet de conserver les proportions de l'image */
+}
+
+.project-details {
+    flex: 2; /* Prend autant d'espace que possible */
+}
+
+.project-details h3 {
+    margin-top: 0; /* Supprime la marge supérieure par défaut */
+}
+
+.project-details a {
+    display: block; /* Fait en sorte que le lien occupe toute la largeur disponible */
+    margin-top: 10px; /* Espace entre la description et le lien */
+    text-decoration: none;
+    background-color: #1a4876; /* Bleu foncé */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.project-details a:hover {
+    background-color: #6c8db7; /* Bleu clair au survol */
+}
+
+
+
+
+/* Styles pour l'entête */
+#header {
+    position: fixed; /* Position fixe */
+    top: 0; /* Fixer l'entête en haut de la page */
+    width: 100%; /* Prendre toute la largeur de la fenêtre */
+    background-color: #1a4876; /* Couleur de fond de l'entête */
+    padding: 20px;
+    z-index: 1000; /* Assurer que l'entête reste au-dessus du contenu */
+}
+
+.header-content {
+    color: white; /* Couleur du texte de l'entête */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* Couleur des liens dans la barre de navigation */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f5deb3; /* Couleur du texte au survol des liens */
+}
+
+
+
+
+
+
+/* Styles spécifiques pour le formulaire de contact */
+
+#contact form {
+    display: inline-block; /* Pour centrer le formulaire */
+    background-color: #b3d9f7; /* Bleu clair */
+    border-radius: 10px; /* Bordure arrondie */
+    padding: 30px; /* Espace intérieur augmenté */
+    margin-top: 20px; /* Espace en haut du formulaire */
+    max-width: 600px; /* Largeur maximale du formulaire */
+    width: 80%; /* Largeur du formulaire ajustée */
+    text-align: left; /* Rétablir l'alignement à gauche pour les éléments du formulaire */
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: calc(100% - 20px); /* Largeur ajustée pour tenir compte des marges horizontales */
+    margin-right: 10px; /* Marge à droite */
+    margin-bottom: 10px; /* Marge en bas */
+    padding: 10px; /* Espace intérieur pour les champs de saisie */
+}
+
+#contact form textarea {
+    height: 100px; /* Hauteur ajustée pour le champ de texte */
+}
+
+#contact form input[type="submit"] {
+    width: calc(100% - 20px); /* Largeur ajustée pour tenir compte des marges horizontales */
+    margin: 10px 0; /* Marge en haut et en bas */
+    padding: 10px; /* Espace intérieur pour le bouton de soumission */
+    border: none; /* Supprimer la bordure par défaut */
+    background-color: #1a4876; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    cursor: pointer; /* Afficher le curseur comme pointeur au survol */
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: #6c8db7; /* Couleur de fond du bouton au survol */
+}
+
+
+.circular-image {
+    border-radius: 50%; /* Arrondir l'image pour créer un cercle */
+    width: 300px; /* Ajuster la taille de l'image */
+    height: 300px; /* Ajuster la taille de l'image */
+}
+
+
+/* Styles pour les écrans de petite taille */
+
+@media screen and (max-width: 768px) {
+    /* Réduire la taille du logo dans l'en-tête */
+    .header-content h1 {
+        font-size: 20px;
+    }
+
+    /* Réduire la taille du texte de la barre de navigation */
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Ajuster la largeur de la section "À propos de moi" */
+    .about-content {
+        flex-direction: column; /* Afficher les éléments en colonne */
+    }
+
+    /* Ajuster la taille de l'image de profil */
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Ajuster la taille des images des projets */
+    .project-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Réduire la taille du logo dans l'en-tête */
+    .header-content h1 {
+        font-size: 24px;
+    }
+}
+
+/* Styles pour les grands écrans */
+@media screen and (min-width: 1025px) {
+    /* Ajoutez vos styles pour les grands écrans ici */
+}
+
+
+/* Styles pour l'icône du hamburger */
+.hamburger-icon {
+    display: none; /* Masquer l'icône par défaut */
+}
+
+/* Styles pour les petits écrans */
+@media screen and (max-width: 768px) {
+    /* Afficher l'icône du hamburger */
+    .hamburger-icon {
+        display: block;
+    }
+
+    /* Masquer les éléments de navigation */
+    nav ul {
+        display: none;
+    }
+
+    /* Styles pour la liste des éléments de navigation */
+    nav ul li {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Styles pour la liste des éléments de navigation */
+    nav ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 0;
+    }
+}
